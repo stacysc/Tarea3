@@ -9,6 +9,6 @@ En el archivo xy.csv está el registro de la frecuencia relativa de dos variable
 
 En este caso, se debe calcula la PMF (Probability Mass function) de las variables *x* y *y*, para ello se debe sumar cada fila o columna correspondiente a cada valor de *x* y *y*, en el caso de *x*, va de 5 a 15, y en el caso de *y* va de 5 a 25. En el caso de la función de densidad para x, resultó un vector 
 
-\\( a^2 = b^2 + c^2 \\)
+$ a^2 = b^2 + c^2 $
 
 
