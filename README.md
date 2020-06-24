@@ -16,7 +16,7 @@ Al graficarlo resultó la gráfica:
   <img src="https://github.com/stacysc/Tarea3/blob/master/denmarginalx.png">
 </p>  
   
-  ![Image](https://github.com/stacysc/Tarea3/blob/master/denmarginalx.png) 
+  
 
 
 
