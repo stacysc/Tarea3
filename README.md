@@ -13,8 +13,11 @@ En este caso, se debe calcula la PMF (Probability Mass function) de las variable
 Al graficarlo resultó la gráfica: 
 
 <p align="center">
+  <img width="460" height="300" src="https://github.com/stacysc/Tarea3/blob/master/denmarginalx.png">
+</p>  
+  
   ![Image](https://github.com/stacysc/Tarea3/blob/master/denmarginalx.png) 
-</p>
+
 
 
 
