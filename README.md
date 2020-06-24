@@ -18,7 +18,7 @@ Al graficarlo resultó la gráfica:
   
   
 
-![equation](http://https://latex.codecogs.com/gif.latex?\inline&space;2&space;*&space;a&space;78)
+![equation](https://latex.codecogs.com/gif.latex?\inline&space;x&space;\\&space;y)
 
 
 
