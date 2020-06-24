@@ -6,6 +6,7 @@ En el archivo xy.csv está el registro de la frecuencia relativa de dos variable
 
 ### Resultados
 > Parte 1:  A partir de los datos, encontrar la mejor curva de ajuste (modelo probabilístico) para las funciones de densidad marginales de X y Y.
+
 En este caso, 
 
 
