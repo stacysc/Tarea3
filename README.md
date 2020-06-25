@@ -134,6 +134,7 @@ Y graficando la curva con estos valores obtenidos, en comparación con la curva 
   <img src="https://github.com/stacysc/Tarea3/blob/master/curvaajustey.png">
 </p> 
 
+***
 
 > Parte 2: Asumir independencia de X y Y, ¿cuál es entonces la función de densidad conjunta que modela los datos?
 
@@ -171,6 +172,7 @@ De esta manera se obtiene un vector con 231 valores, que tiene sentido al tener 
 
 </p>
 
+***
 
 > Parte 3: Hallar los valores de correlación, covarianza y coeficiente de correlación (Pearson) para los datos y explicar su significado.
 
@@ -210,6 +212,7 @@ También se utilizaron los datos del archivo csv 'xyp', por lo que se utilizó s
 
 Se tiene que el coeficiente de correlación es la versión normalizada de la covarianza, y es un valor que está entre 0 y 1, se espera, que como las funciones *x* y *y* son independientes el coeficiente sea cero o un valor cercano a cero, lo que se cumple en este caso. 
 
+***
 
 > Parte 4: Graficar las funciones de densidad marginales (2D), la función de densidad conjunta (3D).
 Las funciones de densidad marginal son las que ya se calcularon en la parte 1. La gráfica de la función de densidad marginal de x es:
