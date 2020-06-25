@@ -10,6 +10,7 @@ En el archivo xy.csv está el registro de la frecuencia relativa de dos variable
 En este caso, se debe calcula la PMF (Probability Mass function) de las variables *x* y *y*, para ello se debe sumar cada fila o columna correspondiente a cada valor de *x* y *y*, en el caso de *x*, va de 5 a 15, y en el caso de *y* va de 5 a 25. En el caso de la función de densidad para x, los valores de cada x corresponden a:
 
 <p align="center">
+ 
 |  X | Valor PMF |
 |:--:|:---------:|
 |  5 | 0.06714   |
@@ -23,11 +24,14 @@ En este caso, se debe calcula la PMF (Probability Mass function) de las variable
 | 13 | 0.07686   |
 | 14 | 0.05977   |
 | 15 | 0.06519   |
+
  </p> 
  
 Y en el caso de la función de densidad para y, se obtuvieron los siguientes valores: 
 
-<p align="center">
+<div align="center">
+ 
+ 
 | Y  | PMF |
 |----|-----|
 |  5 | 0.03698    |
@@ -51,7 +55,8 @@ Y en el caso de la función de densidad para y, se obtuvieron los siguientes val
 | 23 | 0.04137    |
 | 24 | 0.02939    |
 | 25 | 0.03657    |
- </p>  
+
+</div> 
  
 Para graficar las PMFs se creó el correspondiente intervalo de x de [5, 15] y el de y de [5, 25], que son los valores que se deben colocar en el eje de las abscisas. Al graficar la PMF de x resultó la gráfica: 
 
@@ -65,11 +70,12 @@ Y al graficar la PMF de y resultó la gráfica:
   <img src="https://github.com/stacysc/Tarea3/blob/master/denmarginaly.png">
 </p> 
   
-Como se puede observar en las gráficas anteriores, las gráficas se asemejan a la distribución normal o gaussiana. Por lo tanto, se definió la fórmula de la distribución gaussiana que corresponde a: <img src="https://latex.codecogs.com/gif.latex?\inline&space;\frac{1.0}{\sqrt{2\pi\sigma^2}}e^{\frac{-0.5(x-\mu)^2}{\sigma^2}}"> y se calcularon los parámetros necesarios para calcularla, que son la media y la desviación estándar, se utilizó la función curve_fit() de python. En el caso de la función x, su media fue de 9.9048438, y su desviación estándar de 3.2994429; y en el caso de la función y, la media es de 15.0794609 y la desviación estándar de 6.0269377. 
+Como se puede observar en las gráficas anteriores, las gráficas se asemejan a la distribución normal o gaussiana. Por lo tanto, se definió la fórmula de la distribución gaussiana que corresponde a: <img src="https://latex.codecogs.com/gif.latex?\inline&space;f_X(x)&space;=&space;\frac{1.0}{\sqrt{2\pi\sigma^2}}e^{\frac{-0.5(x-\mu)^2}{\sigma^2}}"> y se calcularon los parámetros necesarios para calcularla, que son la media y la desviación estándar, se utilizó la función curve_fit() de python. En el caso de la función x, su media fue de 9.9048438, y su desviación estándar de 3.2994429; y en el caso de la función y, la media es de 15.0794609 y la desviación estándar de 6.0269377. 
 
 Para el ajuste de la función x, se evaluaron los parametros de media y desviación en la función de gauss y se obtuvo un vector con los siguientes parámetros:
     
 <p align="center">
+ 
 | Posición  | Ajuste |
 |----|-----|
 |  0 | 0.04004973    |
@@ -83,6 +89,7 @@ Para el ajuste de la función x, se evaluaron los parametros de media y desviaci
 |  9 | 0.07787164    |
 | 10 | 0.05597005    |
 | 11 | 0.03669766    |
+
 </p>
 
 Y graficando la curva con estos valores obtenidos, en comparación con la curva original obtenemos:
@@ -93,7 +100,8 @@ Y graficando la curva con estos valores obtenidos, en comparación con la curva 
 
 Por otro lado, haciendo el mismo procedimiento para la función y, se obtuvieron los valores:
      
-<p align="center">   
+<p align="center">  
+ 
 | Posición  | Ajuste |
 |----|-----|
 |  0 | 0.01634814    |
@@ -117,6 +125,7 @@ Por otro lado, haciendo el mismo procedimiento para la función y, se obtuvieron
 | 18 | 0.02791127    |
 | 19 | 0.02213617    |
 | 20 | 0.01707927    |
+
 </p> 
 
 Y graficando la curva con estos valores obtenidos, en comparación con la curva original obtenemos:
@@ -148,6 +157,7 @@ Por otro lado, previamente se calcularon los valores de las funciones *x* y *y* 
 De esta manera se obtiene un vector con 231 valores, que tiene sentido al tener 11 valores para x y 21 para y. Algunos valores del vector resultante son:
 
 <p align="center">
+ 
 | Posición  | Probabilidad conjunta |
 |---------- |-----------------------|
 |    0      | 0.0024828371999999995 |
@@ -158,6 +168,7 @@ De esta manera se obtiene un vector con 231 valores, que tiene sentido al tener 
 |    .      |           .           |
 |    229    | 0.0019159340999999998 |
 |    230    | 0.0023839982999999997 |
+
 </p>
 
 
