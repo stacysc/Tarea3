@@ -7,7 +7,7 @@ En el archivo xy.csv está el registro de la frecuencia relativa de dos variable
 ### Resultados
 > Parte 1:  A partir de los datos, encontrar la mejor curva de ajuste (modelo probabilístico) para las funciones de densidad marginales de X y Y.
 
-En este caso, se debe calcula la PMF (Probability Mass function) de las variables *x* y *y*, para ello se debe sumar cada fila o columna correspondiente a cada valor de *x* y *y*, en el caso de *x*, va de 5 a 15, y en el caso de *y* va de 5 a 25. En el caso de la función de densidad para x, los valores de cada x corresponden a:
+En este caso, se debe calcular la PMF (Probability Mass function) de las variables *x* y *y*, para ello se debe sumar cada fila o columna correspondiente a cada valor de *x* y *y*, en el caso de *x*, va de 5 a 15, y en el caso de *y* va de 5 a 25. Con respecto a la función de densidad para x, los valores de cada x corresponden a:
 
 <p align="center">
  
@@ -27,7 +27,7 @@ En este caso, se debe calcula la PMF (Probability Mass function) de las variable
 
  </p> 
  
-Y en el caso de la función de densidad para y, se obtuvieron los siguientes valores: 
+Y en cuanto a la función de densidad para y, se obtuvieron los siguientes valores: 
 
 <div align="center">
  
@@ -152,10 +152,10 @@ Como las funciones marginales se modelan con la distribución gaussiana la funci
 Por otro lado, previamente se calcularon los valores de las funciones *x* y *y* correspondientes a las funciones de densidad marginal de cada uno, entonces, para resolver esta parte se puede multiplicar cada uno de los valores calculados de x con cada uno de los valores calculados de y, de la siguiente manera:
 
 <p align="center">
-  <img src="https://latex.codecogs.com/gif.latex?\inline&space;\prod_{i=5}^{15}\prod_{j=5}^{25}f_X(x_i)f_Y(y_j)">
+  <img src="https://latex.codecogs.com/gif.latex?\inline&space;f_{X,Y}(x,y)&space;=&space;\prod_{i=5}^{15}\prod_{j=5}^{25}f_X(x_i)f_Y(y_j)">
 </p>
 
-De esta manera se obtiene un vector con 231 valores, que tiene sentido al tener 11 valores para x y 21 para y. Algunos valores del vector resultante son:
+De esta manera se obtiene un vector con 231 valores, que tiene sentido, al tener 11 valores para x y 21 para y. Algunos valores del vector resultante son:
 
 <p align="center">
  
@@ -198,7 +198,7 @@ De nuevo se utilizaron los datos del archivo csv 'xyp', por lo que se utilizó s
  <img src="https://latex.codecogs.com/gif.latex?\inline&space;C_{XY}&space;=&space;0.06669156989979619">
 </p>
 
-Como se puede observar, el valor de la covarianza es bastante pequeño, lo que tiene sentido, porque este parametro es el que indica la independencia de dos funciones, y como sabemos que las funciones *x* y *y* son independientes, entonces se esperaba un valor pequeño de covarianza, de casi cero.  
+Como se puede observar, el valor de la covarianza es bastante pequeño, lo que tiene sentido, porque este parametro es el que indica la independencia de dos funciones, y como sabemos que las funciones *x* y *y* son independientes, entonces se esperaba un valor pequeño de covarianza, de casi cero. Entonces, se puede comprobar la independencia entre las funciones *x* y *y*. 
 
 * Coeficiente de correlación: Para calcular este coeficiente se utilizó la fórmula:
 <p align="center">
@@ -210,8 +210,7 @@ También se utilizaron los datos del archivo csv 'xyp', por lo que se utilizó s
  <img src="https://latex.codecogs.com/gif.latex?\inline&space;\rho&space;=&space;0.0033537726681342793">
 </p>
 
-Se tiene que el coeficiente de correlación es la versión normalizada de la covarianza, y es un valor que está entre 0 y 1, se espera, que como las funciones *x* y *y* son independientes el coeficiente sea cero o un valor cercano a cero, lo que se cumple en este caso. 
-
+Se tiene que el coeficiente de correlación es la versión normalizada de la covarianza, y es un valor que está entre 0 y 1, se espera, que como las funciones *x* y *y* son independientes el coeficiente sea cero o un valor cercano a cero, lo que se cumple en este caso. Entonces es como una doble confirmación de la independencia de las dos funciones.
 ***
 
 > Parte 4: Graficar las funciones de densidad marginales (2D), la función de densidad conjunta (3D).
@@ -226,7 +225,7 @@ Y la función de densidad marginal de y es:
   <img src="https://github.com/stacysc/Tarea3/blob/master/denmarginaly.png">
 </p>
 
-Por último, la función de densidad conjunta se graficó con la herramienta 3D de Scatter3D y se obtuvo la gráfica:
+Por último, la función de densidad conjunta se graficó con la herramienta 3D de Scatter3D, se utilizaron los valores de la probabilidad conjunta calculados en la parte 2, y se obtuvo la gráfica:
 <p align="center">
   <img src="https://github.com/stacysc/Tarea3/blob/master/grafico3D.png">
 </p>
